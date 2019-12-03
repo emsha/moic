@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/moic/static/css/main.375813e3.chunk.css",
-    "main.js": "/moic/static/js/main.4b913862.chunk.js",
-    "main.js.map": "/moic/static/js/main.4b913862.chunk.js.map",
+    "main.js": "/moic/static/js/main.79a60bdf.chunk.js",
+    "main.js.map": "/moic/static/js/main.79a60bdf.chunk.js.map",
     "runtime-main.js": "/moic/static/js/runtime-main.9ba1b73b.js",
     "runtime-main.js.map": "/moic/static/js/runtime-main.9ba1b73b.js.map",
     "static/js/2.5dc4bed9.chunk.js": "/moic/static/js/2.5dc4bed9.chunk.js",
     "static/js/2.5dc4bed9.chunk.js.map": "/moic/static/js/2.5dc4bed9.chunk.js.map",
     "index.html": "/moic/index.html",
-    "precache-manifest.780b5f4409bd202b6db5ebf600ab9c96.js": "/moic/precache-manifest.780b5f4409bd202b6db5ebf600ab9c96.js",
+    "precache-manifest.d83c7469a5c3263068f6e824968ebcda.js": "/moic/precache-manifest.d83c7469a5c3263068f6e824968ebcda.js",
     "service-worker.js": "/moic/service-worker.js",
     "static/css/main.375813e3.chunk.css.map": "/moic/static/css/main.375813e3.chunk.css.map",
     "static/media/About.png": "/moic/static/media/About.c4e446de.png",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.9ba1b73b.js",
     "static/js/2.5dc4bed9.chunk.js",
     "static/css/main.375813e3.chunk.css",
-    "static/js/main.4b913862.chunk.js"
+    "static/js/main.79a60bdf.chunk.js"
   ]
 }
