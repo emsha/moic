@@ -279,9 +279,9 @@ class Body extends Component {
         return(
           <div style={getBodyContainerStyle(this.props.layout)}>
             <div style={getBodyTopStyle(this.props.layout)}></div>
-            <h1>please enter your credit card info below</h1>
+            <h1>beep beep boop</h1>
             <form>
-              <input placeholder="gimme" />
+              <input placeholder="hello" />
               <RoundButton name="GO" />
             </form>
           </div>
