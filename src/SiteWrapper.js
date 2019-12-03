@@ -43,7 +43,7 @@ class SiteWrapper extends Component {
       windowWidth: 0,
       windowHeight: 0,
       layout: '',
-      page: 'visitny',
+      page: 'home',
       showBurgerMenu:false,
     };
     this.updateDimensions = this.updateDimensions.bind(this);
