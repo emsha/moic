@@ -1,0 +1,7 @@
+.redhover {
+  color: white;
+}
+.redhover:hover {
+  color: red;
+  cursor: pointer;
+}
