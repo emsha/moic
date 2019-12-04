@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/moic/static/css/main.375813e3.chunk.css",
-    "main.js": "/moic/static/js/main.79a60bdf.chunk.js",
-    "main.js.map": "/moic/static/js/main.79a60bdf.chunk.js.map",
+    "main.css": "/moic/static/css/main.a6252948.chunk.css",
+    "main.js": "/moic/static/js/main.87ff19ff.chunk.js",
+    "main.js.map": "/moic/static/js/main.87ff19ff.chunk.js.map",
     "runtime-main.js": "/moic/static/js/runtime-main.9ba1b73b.js",
     "runtime-main.js.map": "/moic/static/js/runtime-main.9ba1b73b.js.map",
     "static/js/2.5dc4bed9.chunk.js": "/moic/static/js/2.5dc4bed9.chunk.js",
     "static/js/2.5dc4bed9.chunk.js.map": "/moic/static/js/2.5dc4bed9.chunk.js.map",
     "index.html": "/moic/index.html",
-    "precache-manifest.d83c7469a5c3263068f6e824968ebcda.js": "/moic/precache-manifest.d83c7469a5c3263068f6e824968ebcda.js",
+    "precache-manifest.b13e7294e76e55f4acbbf57c14be2b64.js": "/moic/precache-manifest.b13e7294e76e55f4acbbf57c14be2b64.js",
     "service-worker.js": "/moic/service-worker.js",
-    "static/css/main.375813e3.chunk.css.map": "/moic/static/css/main.375813e3.chunk.css.map",
+    "static/css/main.a6252948.chunk.css.map": "/moic/static/css/main.a6252948.chunk.css.map",
     "static/media/About.png": "/moic/static/media/About.c4e446de.png",
     "static/media/Museum-of-ice-cream_ice-cream_churro-churro.png": "/moic/static/media/Museum-of-ice-cream_ice-cream_churro-churro.38c572e5.png",
     "static/media/Museum-of-ice-cream_ice-cream_malt-shake.png": "/moic/static/media/Museum-of-ice-cream_ice-cream_malt-shake.b0445125.png",
     "static/media/Museum-of-ice-cream_ice-cream_nana-banana.png": "/moic/static/media/Museum-of-ice-cream_ice-cream_nana-banana.cd7214e8.png",
     "static/media/Museum-of-ice-cream_ice-cream_pb-&-p.png": "/moic/static/media/Museum-of-ice-cream_ice-cream_pb-&-p.c636515d.png",
     "static/media/Museum-of-ice-cream_ice-cream_pinata-pinata.png": "/moic/static/media/Museum-of-ice-cream_ice-cream_pinata-pinata.870720ad.png",
-    "static/media/index.css": "/moic/static/media/NexaBold.c9f309b3.otf",
     "static/media/PINTS-02.png": "/moic/static/media/PINTS-02.bf6f9e7e.png",
     "static/media/Pint+Stacks_Updated.png": "/moic/static/media/Pint+Stacks_Updated.e6f10070.png",
     "static/media/SF-08-min.png": "/moic/static/media/SF-08-min.b42ab2fb.png",
@@ -36,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.9ba1b73b.js",
     "static/js/2.5dc4bed9.chunk.js",
-    "static/css/main.375813e3.chunk.css",
-    "static/js/main.79a60bdf.chunk.js"
+    "static/css/main.a6252948.chunk.css",
+    "static/js/main.87ff19ff.chunk.js"
   ]
 }

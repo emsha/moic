@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c4193236470fb9a45ce2d64c713429d",
+    "revision": "09a4c67e3ce1b6abb80009423ae89754",
     "url": "/moic/index.html"
   },
   {
-    "revision": "605824dbaa1c313be87e",
-    "url": "/moic/static/css/main.375813e3.chunk.css"
+    "revision": "e245dab98c778748d818",
+    "url": "/moic/static/css/main.a6252948.chunk.css"
   },
   {
     "revision": "09358a564ced1c1090e5",
     "url": "/moic/static/js/2.5dc4bed9.chunk.js"
   },
   {
-    "revision": "605824dbaa1c313be87e",
-    "url": "/moic/static/js/main.79a60bdf.chunk.js"
+    "revision": "e245dab98c778748d818",
+    "url": "/moic/static/js/main.87ff19ff.chunk.js"
   },
   {
     "revision": "10d521ae37adac5bf991",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "870720ad060eb33ed836db4f99c81c0d",
     "url": "/moic/static/media/Museum-of-ice-cream_ice-cream_pinata-pinata.870720ad.png"
-  },
-  {
-    "revision": "c9f309b3d47969ecac64a77a6c672594",
-    "url": "/moic/static/media/NexaBold.c9f309b3.otf"
   },
   {
     "revision": "bf6f9e7edbf0ada23f9e27d69b985e6f",
