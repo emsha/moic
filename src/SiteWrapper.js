@@ -43,7 +43,7 @@ class SiteWrapper extends Component {
       windowWidth: 0,
       windowHeight: 0,
       layout: '',
-      page: 'home',
+      page: 'visitny',
       showBurgerMenu:false,
     };
     this.updateDimensions = this.updateDimensions.bind(this);
@@ -120,10 +120,10 @@ class SiteWrapper extends Component {
               </div>
               <div style={{ display:'flex', flexDirection:'column', justifyContent:'flex-start', paddingLeft:'40px'}}>
                 {burgerMenuItems.map((item) => (
-                  <BurgerMenuItem closeMenuFn={this.closeBurgerMenu} setPageFn={this.setPage} {...item}/>
+                  <BurgerMenuItem closeMenuFn={this.closeBurgerMenu} layout={this.state.layout} setPageFn={this.setPage} {...item}/>
                 ))}
               </div>
-              <div style={{ marginLeft:' 40px' ,display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+              <div style={{ marginLeft:'0' ,display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
                 <h3>instagram</h3>
                 <h3>pintrest</h3>
                 <h3>contact</h3>

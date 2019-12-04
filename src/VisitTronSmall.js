@@ -9,7 +9,8 @@ const getContainerStyle = (layout) => (
     flexDirection:'column',
     width:'100%',
     zIndex:'0',
-    overflow:'hidden'
+    overflow:'hidden',
+  
 
 
   }

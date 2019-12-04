@@ -70,8 +70,7 @@ const getBodyContainerStyle = (layout) => (
 const getBodyEltStyle = (layout) => (
   {
     display: 'flex',
-    paddingRight:'50px',
-    paddingLeft:'50px',
+    padding:'10%',
     flexDirection:layout==='large' ? 'row' : 'column',
     justifyContent:'center',
     width:layout==='large' ? '800px' :'auto',
@@ -83,7 +82,8 @@ const getBodyImgContainerStyle = (layout) => (
 
     display:'flex',
     alignItems:'center',
-    flexDirection:'column'
+    flexDirection:'column',
+    overflow:'hidden',
 
   }
 )
@@ -91,6 +91,7 @@ const getBodyImgContainerStyle = (layout) => (
 const getBodyImgStyle = (layout, size='100%', resize=false) => (
   {
     maxWidth:layout!=='large' && resize ? '160%':size,
+    overflow:'hidden',
     // maxWidth:'100%',
   }
 )
@@ -118,22 +119,19 @@ class Body extends Component {
             </div>
 
             <div style={getBodyEltStyle(this.props.layout)}>
-              <div style={{margin:'20px'}}>
                 <BodyTextElement header='About Us' button={false} content='Museum of Ice Cream transforms concepts and dreams into spaces that provoke imagination and creativity. MOIC is designed to be a culturally inclusive environment and community, inspiring human connection and through the universal power of ice cream. Museum of Ice Cream is a Figure8 brand.'/>
-              </div>
               {this.props.layout==='large' ?
                 <div
                   style={{
-                      width:'1px',
+                      width:'0px',
                       border: '1px solid white',
                       opacity: '.4',
-                      marginTop: '30px',
-                      marginBottom: '30px',
+                      margin: '30px',
                   }}/>
                   : null}
-              <div style={{margin:'20px'}}>
+
                 <BodyTextElement button={false} header='Who We Are' content='We believe in creating beautiful and shareable environments that foster IRL interaction and URL connections, providing fun, multi-sensorial expressions of ice cream that cater to the appetites of our generation. With 4 locations under our belt, New York, Los Angeles, San Francisco and Miami, MOIC is just getting started.'/>
-              </div>
+
             </div>
 
           </div>
@@ -180,28 +178,31 @@ class Body extends Component {
                 <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
               </div>
             </div>
-            <div style={{ width:'100%', display:'flex',flexDirection:this.props.layout==='large' ? 'row' : 'column', justifyContent:'center', width:this.props.layout==='large' ? '1100px' :'auto',}}>
-              <div >
-                <BodyTextElement button={false} header='Private Events' content='Come celebrate your special occasions with us! From birthdays to weddings, corporate events to family reunions, we are here to make your every moment special and memorable.'/>
-              </div>
-              {this.props.layout==='large' ?
-                <div
-                  style={{
-                      width:'0px',
-                      border: '1px solid white',
-                      opacity: '.4',
-                      marginTop: '30px',
-                      marginBottom: '30px',
-                      marginLeft:'50px',
-                      marginRight:'50px',
-                }}/>
-                :
-                null
-              }
-              <div style={{}}>
-                <BodyTextElement header='Morning Swim' buttonText='RESERVE TOUR' button={true} setPageFn={this.props.setPageFn} pageTag='tickets' content='Start your day with a Sprinkle Splash in your own private Sprinkle Pool before heading into the experience with your group. Bring up to 40 guests to your Morning Swim!' />
-                <BodyTextElement header='Midday Celebration' buttonText='RESERVE TOUR' button={true} setPageFn={this.props.setPageFn} pageTag='tickets' content='Who doesn’t want to celebrate midday?  Enjoy our decked out Piano Room and play DJ on the pink turn tables.  Bring up to 40 guests for one hour after your completing the MOIC experience.'/>
-                <BodyTextElement header='All Other Inquiries' buttonText='SUBMIT INQUIRY' button={true} setPageFn={this.props.setPageFn} pageTag='home' content='We would love to have you join us for our Morning Swim or Midday Celebration.  If you are looking for anything outside of these options, please reach out to us below.'/>
+
+            <div style={getBodyEltStyle(this.props.layout)}>
+              <div style={{ width:'100%', display:'flex',flexDirection:this.props.layout==='large' ? 'row' : 'column', justifyContent:'center',maxWidth:'1100px', backgroundColor:''}}>
+                <div >
+                  <BodyTextElement layout={this.props.layout} button={false} header='Private Events' content='Come celebrate your special occasions with us! From birthdays to weddings, corporate events to family reunions, we are here to make your every moment special and memorable.'/>
+                </div>
+                {this.props.layout==='large' ?
+                  <div
+                    style={{
+                        width:'0px',
+                        border: '1px solid white',
+                        opacity: '.4',
+                        marginTop: '30px',
+                        marginBottom: '30px',
+                        marginLeft:'50px',
+                        marginRight:'50px',
+                  }}/>
+                  :
+                  null
+                }
+                <div style={{}}>
+                  <BodyTextElement layout={this.props.layout} header='Morning Swim' buttonText='RESERVE TOUR' button={true} setPageFn={this.props.setPageFn} pageTag='tickets' content='Start your day with a Sprinkle Splash in your own private Sprinkle Pool before heading into the experience with your group. Bring up to 40 guests to your Morning Swim!' />
+                  <BodyTextElement layout={this.props.layout} header='Midday Celebration' buttonText='RESERVE TOUR' button={true} setPageFn={this.props.setPageFn} pageTag='tickets' content='Who doesn’t want to celebrate midday?  Enjoy our decked out Piano Room and play DJ on the pink turn tables.  Bring up to 40 guests for one hour after your completing the MOIC experience.'/>
+                  <BodyTextElement layout={this.props.layout} header='All Other Inquiries' buttonText='SUBMIT INQUIRY' button={true} setPageFn={this.props.setPageFn} pageTag='home' content='We would love to have you join us for our Morning Swim or Midday Celebration.  If you are looking for anything outside of these options, please reach out to us below.'/>
+                </div>
               </div>
             </div>
           </div>
@@ -259,8 +260,8 @@ class Body extends Component {
             <div style={getBodyImgContainerStyle(this.props.layout)}>
               <img src={pintstacks} style={getBodyImgStyle(this.props.layout, '79%')}/>
               <div style={getBodyEltStyle(this.props.layout)}>
-                <div style={{margin:'20px', display:'flex', justifyContent:'center', alignItems:'center', }}>
-                  <BodyTextElement2 header='THE FLAVORS' paragraphs={['Museum of Ice Cream debuts 7 new out-of-this-world flavors that will transport you to a place your tastebuds can only imagine. Gooey peanut butter with salted pretzels covered with creamy milk chocolate; juicy tropical mango with a hint of spicy chili and bursts of sweet raspberry; and swirls of rich dark chocolate and creamy vanilla with ribbons of fudge and crunchy pieces of chocolate-covered cone.',
+                <div style={{  display:'flex', justifyContent:'center', alignItems:'center', }}>
+                  <BodyTextElement2 layout={this.props.layout} header='THE FLAVORS' paragraphs={['Museum of Ice Cream debuts 7 new out-of-this-world flavors that will transport you to a place your tastebuds can only imagine. Gooey peanut butter with salted pretzels covered with creamy milk chocolate; juicy tropical mango with a hint of spicy chili and bursts of sweet raspberry; and swirls of rich dark chocolate and creamy vanilla with ribbons of fudge and crunchy pieces of chocolate-covered cone.',
                   'Sourced from the finest ingredients - true English toffee, 1950’s inspired malted milk balls, and ripe bananas from the MOIC jungle - these jam-packed flavors will take you on the sweetest taste adventure.']}/>
                 </div>
               </div>
@@ -298,7 +299,7 @@ class Body extends Component {
         return(
           <div style={getHomeStyle(this.props.layout)}>
           <div style={getBodyTopStyle(this.props.layout)}></div>
-          <CityEmblem name="San Francisco" logo={sflogo} image={sfimg} setPageFn={this.props.setPageFn} pageTag='visitsf'/>
+          <CityEmblem layout={this.props.layout} name="San Francisco" logo={sflogo} image={sfimg} setPageFn={this.props.setPageFn} pageTag='visitsf'/>
           {this.props.layout!=='small' ?
             <div
               style={{
@@ -316,7 +317,7 @@ class Body extends Component {
                     marginBottom: '30px',
                 }}/>
                 : null}
-            <CityEmblem name="New York City" logo={nyclogo} image={nycimg} setPageFn={this.props.setPageFn} pageTag='visitny' />
+            <CityEmblem name="New York City" layout={this.props.layout} logo={nyclogo} image={nycimg} setPageFn={this.props.setPageFn} pageTag='visitny' />
 
           </div>
         );

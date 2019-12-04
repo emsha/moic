@@ -20,7 +20,7 @@ class BodyTextElement extends Component {
 
     render() {
         return (
-            <div style={{padding:'10px 70px 10px 70px', display:'flex', flexDirection:'column'}}>
+            <div style={{backgroundColor:'',margin:this.props.layout==='large'?'30px':'0px', display:'flex', flexDirection:'column'}}>
               <h1 style={headerStyle}>{this.props.header}</h1>
               <p style={paragraphStyle}>{this.props.content}</p>
               {

@@ -4,36 +4,43 @@ import Menu from './Menu.js';
 import Menu2 from './Menu2.js';
 
 
-const headerStyle = {
-  display:'flex',
-  backgroundColor: "#F89ABAE0",
-  justifyContent: "space-between",
-  // position:'absolute',
-  alignItems: 'center',
-  padding: '20px',
-  // opacity: '1',
+const headerStyle = (layout) => (
 
-}
+  {
+    display:'flex',
+    flexDirection:'row',
+    backgroundColor: "#F89ABAE0",
+    justifyContent: "space-between",
+    // position:'absolute',
+    alignItems: 'center',
+    padding: '20px',
+    // backgroundColor:'green',
+    height: layout==='small' ? '48px' : '60px'
+    // opacity: '1',
 
+  }
+);
 
 const getImgStyle = (layout) => {
   var h = 0;
   switch (layout) {
     case 'small':
-      h=20;
+      h=40;
     break;
     case 'medium':
-      h=20;
+      h=30;
     break;
     case 'large':
-      h=20;
+      h=30;
     break;
     default:
-    h = 20
+      h = 20
   }
   return({
-    width:'auto',
-    height: `${h}px`,
+    height:layout==='small'? 'auto':`${h}%`,
+    maxWidth:layout==='small'? '80%':'auto',
+    // alignSelf:'center',
+    // backgroundColor:'blue',
     cursor: 'pointer',
   })
 }
@@ -55,7 +62,7 @@ class Header extends Component {
       if (this.props.layout==='large') {
         return (
           <div>
-            <div style={headerStyle}>
+            <div style={headerStyle(this.props.layout)}>
               <img onClick={this.handleLogoClick} src={`${logo}`} style={getImgStyle(this.props.layout)}/>
               <Menu layout={this.props.layout} items={this.props.items} setPageFn={this.props.setPageFn} />
             </div>
@@ -65,7 +72,7 @@ class Header extends Component {
       else {
         return(
           <div>
-            <div style={headerStyle}>
+            <div style={headerStyle(this.props.layout)}>
               <Menu layout={this.props.layout} handleBurgerClick={this.props.handleBurgerClick}/>
               <img onClick={this.handleLogoClick} src={`${logo}`} style={getImgStyle(this.props.layout)}/>
             </div>

@@ -18,8 +18,8 @@ class BurgerMenuItem extends Component {
 
     render() {
         return (
-            <div style={{ cursor:'pointer'}} onHover={this.handleHover} onClick={this.handleClick}>
-              <h2> {this.props.title} </h2>
+            <div style={{ cursor:'pointer', paddingTop:'5vh'}} onHover={this.handleHover} onClick={this.handleClick}>
+              <li style={{listStyle:'none'}}> {this.props.title} </li>
             </div>
         );
     }

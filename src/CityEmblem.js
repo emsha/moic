@@ -6,7 +6,7 @@ const containerStyle = {
     flexDirection:'column',
     justifyContent:'center',
     alignItems:'center',
-    
+
     // backgroundColor:'gray'
 }
 
@@ -25,8 +25,8 @@ class CityEmblem extends Component {
   render(){
     return (
       <div style={containerStyle}>
-        <img src={this.props.image} />
-        <img src={this.props.logo} />
+        <img style={{maxWidth:'100%'}} src={this.props.image} />
+        <img style={{maxWidth:'100%'}} src={this.props.logo} />
         <RoundButton name='RESERVE TICKETS' color='white' change='change' setPageFn={this.props.setPageFn} pageTag={this.props.pageTag} />
       </div>
     );

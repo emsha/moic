@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 const headerStyle = (
   {
     color: 'white',
-    fontSize: '60pt'
+    // fontSize: '60pt'
   }
 )
 
 const paragraphStyle = (
   {
     color:'white',
-    fontSize: '18pt'
+    // fontSize: '18pt'
   }
 )
 

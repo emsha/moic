@@ -27,7 +27,7 @@ const getFooterStyle= (layout) => (
     justifyContent:'space-between',
     backgroundColor: '#F6DBE1',
     color: '#F89ABA',
-    padding: '20px',
+    // padding: layout==='small'?'10px':'20px',
   });
 
 const columnStyle = {

@@ -38,8 +38,8 @@ class Menu extends Component {
     }
     else {
       return(
-        <div style={getMenuStyle()}>
-          <img src={hamburger} onClick={this.props.handleBurgerClick} style={{height:'60px', width:'auto', cursor:'pointer'}}/>
+        <div style={{height:'80%', width:'80%',}}>
+          <img src={hamburger} onClick={this.props.handleBurgerClick} style={{height:'100%', width:'auto', cursor:'pointer'}}/>
         </div>
       );
     }
